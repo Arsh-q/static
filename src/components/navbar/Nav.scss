@@ -1,0 +1,35 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+.nav{
+    background-color: white;
+    width: 100%;
+}
+.logo {
+  padding-left: 0 !important;
+  display: flex;
+  align-items: center;
+  color: red;
+  h1{
+    font-size: 2rem;
+    letter-spacing: 3px;
+  }
+  img {
+    height: 90px;
+    width: 90px;
+  }
+}
+@media (max-width: 768px) {
+  
+  .logo{
+    h1{
+      display: none;
+    }
+    img{
+      height: 65px;
+      width: 65px;
+    }
+  }
+}

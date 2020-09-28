@@ -1,0 +1,76 @@
+@media (max-width: 600px) {
+  footer {
+    font-size: 13px !important;
+    .update {
+      flex-direction: column;
+      .col:nth-of-type(1) {
+        text-align: center;
+      }
+      .col:nth-of-type(3) {
+        padding: 1rem 0;
+        text-align: center !important;
+      }
+    }
+    .bg {
+      min-height: fit-content;
+      ul {
+        justify-content: center !important;
+      }
+      .foot {
+        top: 130px;
+        
+      }
+      .foot2 {
+        top: 0px;
+        ul li {
+          padding: 0;
+          font-size: 14px;
+        }
+        ul li:nth-of-type(3) {
+          bottom: -70px;
+          position: relative;
+        }
+        .address p {
+          position: relative;
+          top: -36px;
+          text-align: center;
+        }
+      }
+      .foot:nth-of-type(1) {
+        justify-content: center;
+        flex-direction: column;
+        &::after {
+          content: "Always Cares ur Vahan";
+        }
+      }
+      .foot:nth-of-type(2) {
+        ul {
+          flex-direction: column;
+          justify-content: center;
+          padding: 1rem;
+          align-items: center;
+          li {
+            margin: 0.3rem;
+          }
+        }
+      }
+      .foot:nth-of-type(3) {
+        justify-content: center;
+        ul {
+          list-style: none;
+          display: flex;
+          li {
+            margin: 1rem;
+          }
+        }
+      }
+      #play {
+        flex-direction: column-reverse;
+        top: 130px;
+        min-height: 44vh;
+        position: relative;
+        background: red;
+      }
+    }
+  }
+}

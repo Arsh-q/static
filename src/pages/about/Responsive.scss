@@ -1,0 +1,99 @@
+@media (max-width: 600px) {
+  .container {
+    background-color: white;
+    padding: 0;
+    .about {
+      position: relative;
+
+      .response {
+        display: flex;
+        flex-direction: column !important;
+        min-height: 60vh;
+        z-index: 1;
+      }
+    }
+    h1 {
+      margin-top: 8rem;
+      margin-bottom: 3rem;
+      flex-direction: row;
+      z-index: 2;
+    }
+
+    p {
+      width: 80%;
+      z-index: 2;
+
+      font-size: 18px;
+      margin-bottom: 8rem;
+    }
+  }
+  .mission {
+    align-items: flex-start;
+    background-color: red;
+    .grid2 {
+      display: none;
+    }
+    .grid1 {
+      h1 {
+        margin: 0;
+      }
+      p {
+        margin: 0;
+        width: 100%;
+        font-size: 16px;
+      }
+    }
+  }
+  .grid4 {
+    padding: 0;
+    height: fit-content;
+  }
+  .grid3 {
+    p {
+      color: black;
+      margin: 0;
+      width: 100%;
+    }
+  }
+  .our-team {
+    .grid5 {
+      img {
+        margin: 0;
+        padding-top: 2rem;
+      }
+    }
+  }
+  .soln {
+    h1 {
+      width: 60%;
+      font-size: 1.8rem;
+      margin-bottom: 1rem;
+    }
+    .grid7 {
+      margin-right: auto;
+    }
+    .grid8 {
+      margin: auto;
+      text-align: center;
+      padding: 0;
+    }
+  }
+}
+@media (max-width: 600px) {
+  .grid3 {
+    #extra_content {
+      display: none;
+    }
+    #read_more {
+      margin: auto;
+      color: gray;
+      border: none;
+      font-size: 1rem;
+      margin-top: 1rem;
+      display: block;
+      &:focus {
+        outline: none;
+      }
+    }
+  }
+}

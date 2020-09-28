@@ -1,0 +1,121 @@
+$main-red: red;
+$main-gray: gray;
+
+@mixin flexprops {
+  display: flex;
+  min-height: 40vh;
+  padding-top: 5rem;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.header {
+  min-height: 50vh !important;
+  padding-top: 9rem !important;
+  @include flexprops();
+  h1 {
+    color: $main-red;
+    font-size: 2.5rem;
+    margin: 1rem 0;
+  }
+  p {
+    text-align: center;
+    width: 68%;
+    font-size: 1.5rem;
+    color: $main-gray;
+    font-weight: bold;
+  }
+  button {
+    background-color: red;
+    color: white;
+    margin: 1.7rem 0;
+    font-size: 1.6rem;
+    text-transform: capitalize;
+    font-weight: bold;
+    letter-spacing: 1px;
+    padding: 0.6rem 4.3rem;
+    border-radius: 0;
+  }
+}
+.perks {
+  @include flexprops();
+  padding-top: 2rem;
+  h1 {
+    font-weight: 500;
+    color: rgb(29, 24, 24);
+    font-size: 2.3rem;
+  }
+  p {
+    text-align: center;
+    font-size: 1.5rem;
+    width: 80%;
+    margin: 1.4rem 0;
+    color: $main-gray;
+    font-weight: bold;
+  }
+}
+.cards {
+  background-image: url(../../images/perks.svg);
+  background-size: cover;
+  transform: translateY(-105px);
+  z-index: -20;
+  background-position: center;
+  background-repeat: no-repeat;
+  text-align: center;
+
+  .card {
+    transform: translateY(300px);
+    max-width: 20rem;
+    .content {
+      display: flex;
+      flex-direction: column;
+      justify-content: space-evenly;
+      height: 260px;
+      img {
+        text-align: center;
+        height: 60px;
+        margin: 0 auto;
+        width: auto;
+      }
+    }
+  }
+  section {
+    min-height: 50vh;
+  }
+}
+.tabss {
+  h2 {
+    color: $main-gray;
+    padding: 1rem 0;
+    margin-bottom: 2rem;
+    letter-spacing: 2px;
+  }
+  #appbar {
+    background-color: white;
+    color: $main-gray;
+    justify-content: space-between !important;
+  }
+  .tabcomp {
+    color: $main-gray;
+    h1 {
+      font-weight: 500;
+      padding: 1.4rem 0;
+    }
+    p {
+      font-size: 1.2rem;
+      letter-spacing: 2px;
+    }
+    .btn {
+      text-align: center;
+      button {
+        cursor: pointer;
+        border: none;
+        padding: 0.7rem 1rem;
+        font-weight: 500;
+        font-size: 1.3rem;
+        background-color: $main-red;
+        color: white;
+      }
+    }
+  }
+}

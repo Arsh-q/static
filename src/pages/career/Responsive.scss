@@ -1,0 +1,47 @@
+@media (max-width: 600px) {
+  .header {
+    h1 {
+      font-size: 30px;
+    }
+    p {
+      font-size: 20px;
+    }
+  }
+  .perks {
+    h1 {
+      font-size: 30px;
+    }
+    p {
+      font-size: 20px;
+    }
+  }
+  .cards {
+    background-image: none;
+    transform: translateY(-265px);
+    .card {
+      padding: 1.5rem 0;
+    }
+    section {
+      min-height: 20vh;
+    }
+  }
+  .tabss {
+    .panel {
+      padding: 0;
+    }
+    .tabcomp {
+      h1 {
+        font-size: 20px;
+      }
+      p {
+        font-size: 18px;
+      }
+      .btn {
+        button {
+          padding: 0.5rem 0.8rem;
+          font-size: 12px;
+        }
+      }
+    }
+  }
+}
